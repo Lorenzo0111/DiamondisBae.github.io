@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+    
+  .title {
+    margin: 0;
+    transform: scale(0.8);
+  }
+
+  .ellipse {
+    display: none;
+  }
+
+  .boxes,
+  .testimonials {
+    flex-direction: column;
+    transform: scale(0.8);
+  }
+
+  .testimonial,
+  .box {
+    margin-right: 0;
+  }
+
+  .section-title::after,
+  .section-title::before {
+    width: 50px;
+    height: 5px;
+  }
+
+}
