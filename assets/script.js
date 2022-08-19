@@ -41,8 +41,55 @@ function incNbrRec(i, endNbr, elt) {
   }
 }
 
-window.onload = function() {
+window.onload = async function() {
+  await getData();
+
   incEltNbr("clients");
   incEltNbr("views");
   incEltNbr("channels");
+}
+
+async function getData() {
+  const response = await fetch("/assets/data.json");
+  const data = await response.json();
+
+  document.getElementById("clients").innerText = data.counters.clients;
+  document.getElementById("views").innerText = data.counters.views;
+  document.getElementById("channels").innerText = data.counters.channels;
+
+  const clients = $("#client-list");
+  for (const client of data.clients) {
+    clients.append(`
+      <div class="card">
+          <img src="${client.image}" alt="client" width="180" class="client">
+          <h2 style="margin-top: 5px;">${client.name}</h2>
+      </div>`
+    )
+  }
+
+  const youtubers = $("#youtuber-list");
+  for (const client of data.youtubers) {
+    youtubers.append(`
+      <div class="card">
+          <img src="${client.image}" alt="client" width="180" class="client">
+          <h2 style="margin-top: 5px;">${client.name}</h2>
+      </div>`
+    )
+  }
+
+  const testimonials = $("#testimonial-list");
+  for (const testimonial of data.testimonials) {
+    testimonials.append(`
+      <div class="testimonial">
+          <div class="testimonial-name">
+              <img src="${testimonial.image}" alt="User" width="80" height="80" class="client">
+              <h1 style="margin-top: 30px; margin-left: 10px;">${testimonial.name}</h1>
+          </div>
+
+          <div class="comment">
+              ${testimonial.comment}
+          </div>
+      </div>`
+    )
+  }
 }

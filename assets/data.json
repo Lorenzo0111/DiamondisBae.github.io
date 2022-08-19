@@ -1,0 +1,68 @@
+{
+    "counters": {
+        "clients": 100,
+        "views": 20,
+        "channels": 10
+    },
+    "clients": [
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        }
+    ],
+    "youtubers": [
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name"
+        }
+    ],
+    "testimonials": [
+        {
+            "image": "assets/client.png",
+            "name": "Client Name",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+        },
+        {
+            "image": "assets/client.png",
+            "name": "Client Name",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+        }
+    ]
+}
