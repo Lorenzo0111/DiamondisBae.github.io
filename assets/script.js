@@ -21,22 +21,20 @@ setInterval(() => {
      }, 300);
 }, 1000);
 
-var speed = 30;
-
 /* Call this function with a string containing the ID name to
  * the element containing the number you want to do a count animation on.*/
-function incEltNbr(id) {
+function incEltNbr(id, speed, count) {
   elt = document.getElementById(id);
   endNbr = Number(document.getElementById(id).innerHTML);
-  incNbrRec(0, endNbr, elt);
+  incNbrRec(0, endNbr, elt, speed, count);
 }
 
 /*A recursive function to increase the number.*/
-function incNbrRec(i, endNbr, elt) {
+function incNbrRec(i, endNbr, elt, speed, count) {
   if (i <= endNbr) {
     elt.innerHTML = i;
     setTimeout(function() {//Delay a bit before calling the function again.
-      incNbrRec(i + 1, endNbr, elt);
+      incNbrRec(i + count, endNbr, elt, speed, count);
     }, speed);
   }
 }
@@ -44,9 +42,9 @@ function incNbrRec(i, endNbr, elt) {
 window.onload = async function() {
   await getData();
 
-  incEltNbr("clients");
-  incEltNbr("views");
-  incEltNbr("channels");
+  incEltNbr("clients", 30, 1);
+  incEltNbr("views", 0, 1000000);
+  incEltNbr("channels", 30, 1);
 }
 
 async function getData() {
@@ -61,7 +59,9 @@ async function getData() {
   for (const client of data.clients) {
     clients.append(`
       <div class="card">
-          <img src="${client.image}" alt="client" width="180" class="client">
+          <div class="client-container">
+            <img src="${client.image}" alt="client" width="180" class="client">
+          </div>
           <h2 style="margin-top: 5px;">${client.name}</h2>
       </div>`
     )

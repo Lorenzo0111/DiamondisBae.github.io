@@ -1,68 +1,80 @@
 {
     "counters": {
-        "clients": 100,
-        "views": 20,
-        "channels": 10
+        "clients": 70,
+        "views": 500000000,
+        "channels": 50
     },
     "clients": [
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/clients/spacemc.png",
+            "name": "Space MC"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/clients/gamersreact.png",
+            "name": "Gamers React"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/clients/minerival.png",
+            "name": "Minerival"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/clients/pac.png",
+            "name": "PAC"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/clients/rc.png",
+            "name": "RC"
+        },
+        {
+            "image": "assets/clients/wickedprison.png",
+            "name": "Wicked Prison"
         }
     ],
     "youtubers": [
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/youtubers/freshlol.png",
+            "name": "FreshLol"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/youtubers/mapicc.png",
+            "name": "Mapicc"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/youtubers/mcclutch.png",
+            "name": "McClutch"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/youtubers/p0wer0wner.png",
+            "name": "p0wer0wner"
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name"
+            "image": "assets/youtubers/rky.png",
+            "name": "RKY"
+        },
+        {
+            "image": "assets/youtubers/spifey.png",
+            "name": "Spifey"
+        },
+        {
+            "image": "assets/youtubers/zyph.png",
+            "name": "Zyph"
         }
     ],
     "testimonials": [
         {
-            "image": "assets/client.png",
-            "name": "Client Name",
-            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+            "image": "assets/testimonials/lego.png",
+            "name": "Lego_Maestro",
+            "comment": "5000% Vouch. I'm a Minecraft (Hypixel) Youtuber with over 140,000 subscribers (You can check my account to verify) and Diamond is the best. Always super nice and gets straight to the point with business. Highly reccomend him for a manager position but I am confident he'd be good at anything."
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name",
-            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+            "image": "assets/testimonials/zino.png",
+            "name": "NottZino",
+            "comment": "Diamond hooked me up with some streamer/youtubers. Had a really good results from diamond. Diamond is super interactive and helpful throughout the stages of advertisements."
         },
         {
-            "image": "assets/client.png",
-            "name": "Client Name",
-            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu velit eleifend, feugiat nunc vel, dictum ex. Nam tincidunt neque sit amet dolor consequat porta."
+            "image": "assets/testimonials/jasmine.png",
+            "name": "Jasmine",
+            "comment": "The user is extremely talented and has always been the ideal partner for someone like me who'd love for someone to take the wheel on the management part of the server as I do not have much time to do so. I definitely use and always use Diamond for management."
         }
     ]
 }
